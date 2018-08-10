@@ -5,7 +5,7 @@
 #### By Rita Bennett-Chew
 
 ## Description
-An app where users can select an ailment to find a doctor who is able to treat them
+An app where users can select an ailment to find a doctor who is able to treat them. Returns a list of doctors and the main practice information for each
 
 ## Setup on OSX
 * Go to [https://developer.betterdoctor.com] to sign up for an account and register for an API key

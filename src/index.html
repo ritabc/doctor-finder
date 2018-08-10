@@ -6,14 +6,29 @@
 <body>
   <div class="container">
     <div class="header jumbotron">
-      <h1>Locate Doctors By Symptom</h1>
+      <h1>Locate Portland Doctors By Symptom</h1>
     </div>
     <div class="inputs">
-      <form>
+      <form id="find-doctors-by-ailment">
+        <label>Select an Ailment to See Doctors Available to Treat You</label>
         <select id="ailments-dropdown" name="ailments">
-
         </select>
+        <button id="ailments-search">Search</button>
       </form>
+
+      <form id="find-doctors-by-name">
+        <label for="name">Enter the Name of a Doctor to See Matching Doctors</label>
+        <input type="text" id="name">
+        <button name="button">Search</button>
+      </form>
+    </div>
+    <div class="outputs">
+      <div class="doctors-by-ailment">
+        <h2>See Doctors By Ailment</h2>
+        <div class="card-group">
+          
+        </div>
+      </div>
     </div>
   </div>
 </body>
