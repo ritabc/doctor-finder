@@ -1,13 +1,15 @@
-# Project Title
+# Doctor Finder
 
-#### Epicodus JavaScript exercise, Date
+#### Epicodus JavaScript Exercise, August 10th, 2018
 
-#### By Your Name Here
+#### By Rita Bennett-Chew
 
 ## Description
+An app where users can select an ailment to find a doctor who is able to treat them
 
 ## Setup on OSX
-
+* Go to [https://developer.betterdoctor.com] to sign up for an account and register for an API key
+* Create a .env file at the project's root level, and store the API key there as a exports.env.apikey variable
 * Install Node.js
 * Install karma-cli globally: `npm install -g karma-cli`
 * Clone the repo
@@ -39,4 +41,4 @@
 
 This software is licensed under the MIT license.
 
-Copyright (c) 2018 **Your Name Here**
+Copyright (c) 2018 **Rita Bennett-Chew**
