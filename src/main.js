@@ -48,7 +48,7 @@ $(document).ready(function() {
           });
           let phoneOrPhones = ""
           landlines.forEach(function(landline) {
-            phoneOrPhones = phoneOrPhones + landline.number + "/n"
+            phoneOrPhones = phoneOrPhones + landline.number + "\n"
           })
           let website = ""
           if (mainPractice.hasOwnProperty("website")) {
@@ -63,7 +63,7 @@ $(document).ready(function() {
           } else {
             newPatientsString = 'No'
           }
-          $('.doctors-by-ailment > .card-group').append(`
+          $('.doctors-by-ailment > .card-columns').append(`
             <div class="card card-body">
               <h3 class="card-title">Main Practice of ${name}</h3>
               <h4>Address</h4>
