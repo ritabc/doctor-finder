@@ -2,7 +2,7 @@ export class BetterDoctorAPI {
   getAllAilments() {
     return new Promise(function(resolve, reject) {
       let request = new XMLHttpRequest();
-      let url = `https://api.betterdoctor.com/2016-03-01/conditions?user_key=${process.env.API_KEY}`;
+      let url = `https://api.betterdoctor.com/2016-03-01/conditions?user_key=${process.env.exports.apiKey}`;
 
       request.onload = function() {
         if(this.status === 200) {
@@ -19,7 +19,7 @@ export class BetterDoctorAPI {
   getDoctorsByAilment(ailment) {
     return new Promise(function(resolve, reject) {
       let request = new XMLHttpRequest();
-      let url = `https://api.betterdoctor.com/2016-03-01/doctors?query=${ailment}&user_key=${process.env.API_KEY}`;
+      let url = `https://api.betterdoctor.com/2016-03-01/doctors?query=${ailment}&user_key=${process.env.exports.apiKey}`;
 
       request.onload = function() {
         if(this.status === 200) {
@@ -36,7 +36,7 @@ export class BetterDoctorAPI {
   getDoctorsByName(name) {
     return new Promise(function(resolve, reject) {
       let request = new XMLHttpRequest();
-      let url = `https://api.betterdoctor.com/2016-03-01/doctors?name=${name}&user_key=${process.env.API_KEY}`;
+      let url = `https://api.betterdoctor.com/2016-03-01/doctors?name=${name}&user_key=${process.env.exports.apiKey}`;
 
       request.onload = function() {
         if(this.status === 200) {
